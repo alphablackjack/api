@@ -9,7 +9,7 @@ import javax.persistence.Id
 @Data
 @Entity
 class User(@Id @GeneratedValue(strategy = GenerationType.AUTO) val id: Long,
-           firstName: String,
-           lastName: String,
-           age: Int,
-           email: String)
+           val firstName: String,
+           val lastName: String,
+           val age: Int,
+           val email: String)
